@@ -1,51 +1,75 @@
-<html>
-  <head>
-    <style>
-      .fade-in {
-        opacity: 0;
-        transition: opacity 1s;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>My Cybersecurity Portfolio</h1>
-    <h2>Personal Information</h2>
-    <div class="fade-in">
-      <p>Name: John Doe</p>
-      <p>Location: San Francisco, CA</p>
-      <p>Email: john.doe@example.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/john-doe/">https://www.linkedin.com/in/john-doe/</a></p>
-    </div>
-    <h2>Work Experience</h2>
-    <div class="fade-in">
-      <h3>Cybersecurity Analyst</h3>
-      <p>Company: XYZ Inc.</p>
-      <p>Location: San Francisco, CA</p>
-      <p>Duration: January 2020 - Present</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Welcome</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
       <ul>
-        <li>Conducted security assessments and penetration testing on various systems and networks.</li>
-        <li>Developed and implemented security policies and procedures.</li>
-        <li>Trained employees on cybersecurity best practices.</li>
+        <li id="about">/about</li>
+        <li id="contact">/contact</li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>btraversy:$<span class="cursor">|</span></h1>
+      <h3>Find me online:</h3>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">YouTube</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/user/brad-traversy/" target="_blank">Udemy</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/traversymedia" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/bradtraversy/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/traversymedia/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://github.com/bradtraversy" target="_blank">Github</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/bradtraversy" target="_blank">Codepen</a>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <div class="hidden">
+    <div id="about-content">
+      <h2>about-me:$<span class="cursor">|</span></h2>
+      <p>My name is Brad Traversy and I have been programming for 14 years</p>
+      <p>
+        Some of the languages that I am fluent in include JavaScript, Python,
+        PHP and Ruby
+      </p>
+    </div>
+
+    <div id="contact-content">
+      <h2>contact-me:$<span class="cursor">|</span></h2>
+      <p>You can contact me at the email and phone number below</p>
+      <ul>
+        <li>Phone: 555-555-5555</li>
+        <li>Email: brad@email.com</li>
       </ul>
     </div>
-    <h2>Education</h2>
-    <div class="fade-in">
-      <h3>Bachelor of Science in Computer Science</h3>
-      <p>University: University of California, Berkeley</p>
-      <p>Location: Berkeley, CA</p>
-      <p>Duration: September 2016 - May 2020</p>
-      <p>GPA: 3.8</p>
-    </div>
-    <h2>Skills</h2>
-<div class="fade-in">
-<ul>
-<li>Network security</li>
-<li>Penetration testing</li>
-<li>Vulnerability assessment</li>
-<li>Cybersecurity policies and procedures</li>
-<li>Security incident response</li>
-</ul>
-</div>
+  </div>
 
-  </body>
+  <script src="js/winbox.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
