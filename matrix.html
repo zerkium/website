@@ -56,26 +56,6 @@
     }
   }
 
-  // Call the draw function
-	 function draw() {
-    // Set the font size and font family of the matrix container
-    matrix.style.fontSize = fontSize + "px";
-    matrix.style.fontFamily = "Courier New, monospace";
-
-    // Loop through the drops array and draw each matrix character
-    for (let i = 0; i < drops.length; i++) {
-      // Generate a random character from the characters string
-      let text = characters[Math.floor(Math.random() * characters.length)];
-
-      // Set the position and color of the matrix character
-      matrix.innerHTML += "<span style='position: absolute; left: " + i * fontSize + "px; top: " + drops[i] * fontSize + "px; color: #00FF00;'>" + text + "</span>";
-
-      // Increment the position of the matrix character
-      drops[i]++;
-
-      // If the matrix character goes off the bottom of the screen, reset its position
-      if (drops[i] * fontSize > matrix.offsetHeight && Math.random() > 0.975) {
-        drops[i] = 0;
-      }
-    }
-  }
+// Call the draw function
+  setInterval(draw, 35); // Call the draw function every 35 milliseconds to create the matrix rain effect
+</script>
