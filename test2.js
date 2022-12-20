@@ -68,26 +68,3 @@ function runScripts(data, pos) {
           break;
     }
 }
-
-document.getElementById('add-terminal-link').addEventListener('click', function(e) {
-  e.preventDefault();
-
-  // Create a new terminal element
-  var terminal = document.createElement('div');
-  terminal.classList.add('terminal-window');
-  terminal.innerHTML = `
-    <header>
-      <div class="button green"></div>
-      <div class="button yellow"></div>
-      <div class="button red"></div>
-    </header>
-    <section class="terminal">
-      <div class="history"></div>
-      $&nbsp;<span class="prompt"></span>
-      <span class="typed-cursor"></span>
-    </section>
-  `;
-
-  // Append the new terminal to the DOM
-  document.body.appendChild(terminal);
-});
