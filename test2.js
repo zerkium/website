@@ -27,6 +27,14 @@ $(function() {
   runScripts(data, 0);
 });
 
+const experience = document.querySelector('experience-button');
+experienceButton.addEventListener('click'; () => 
+{
+  action: 'type',
+  strings: ["TEST",''],
+  postDelay: 2000
+});
+
 function runScripts(data, pos) {
     var prompt = $('.prompt'),
         script = data[pos];
