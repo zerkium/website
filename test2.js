@@ -1,12 +1,4 @@
 $(function() {
-  
-  const experience = document.querySelector('experiences-button');
-  experiencesButton.addEventListener('click'; () => 
-  {
-    action: 'type',
-    strings: ["TEST",''],
-    postDelay: 2000
-  });
   var data = [
     { 
       action: 'type',
