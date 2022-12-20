@@ -20,7 +20,7 @@ $(document).ready(function() {
 });
 
 setTimeout(() => {
-  window.location.href = './test2.html';
+  window.location.href = './terminal.html';
 }, 20000); // Redirect to the page after 20 seconds (20,000 milliseconds)
 
 var textString = `.
