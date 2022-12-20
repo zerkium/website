@@ -4,23 +4,20 @@ $(document).ready(function() {
 
 	let count = 0;
 
-	const intervalId = setInterval(() => {
-  		if(textArray[count] === "\n") {
-    			textElem.append("<br>");
-  		}
-  		else {
-    			textElem.append(`<span class="hacking-animation__character">${textArray[count]}</span>`);
-  		}
+	setInterval(() => {
+			if(textArray[count] === "\n") {
+					textElem.append("<br>");
+			}
+			else {
+					textElem.append(`<span class="hacking-animation__character">${textArray[count]}</span>`);
+			}
 
-  		count++;
-  		if (count === textArray.length) {
-    			count = 0;
-  		}
+			count++;
+			if (count === textArray.length) {
+					count = 0;
+			}
 	}, 20);
-
-	setTimeout(() => {
-  		clearInterval(intervalId);
-	}, 20000); // Clear the interval after 20 seconds (20,000 milliseconds)
+});
 
 var textString = `.
 .
