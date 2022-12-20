@@ -167,14 +167,5 @@ async function pictuteInPicture() {
 function clear() {
     term.clear();
 }
-
-$('#terminal').terminal({
-    open: function() {
-        this.echo('you try to open').exec('close');
-    },
-    close: function() {
-        this.echo('you closed');
-    }
-});
     
 cssVars(); // ponyfill
