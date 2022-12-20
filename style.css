@@ -20,7 +20,6 @@ body {
 
 h1 {
   font-family: monospace;
-  background-color: #000;
   white-space: pre-wrap;
 
   color: var(--text-color);
