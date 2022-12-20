@@ -68,3 +68,15 @@ function runScripts(data, pos) {
           break;
     }
 }
+
+document.querySelector('.experience-button').addEventListener('click', function() {
+  var data = [
+    { 
+      action: 'type',
+      strings: ['Additional information to display in the terminal^400'],
+      output: ' ',
+      postDelay: 1000
+    }
+  ];
+  runScripts(data, 0);
+});
