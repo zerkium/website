@@ -1,25 +1,4 @@
 $(function() {
-  var userInput = '';
-
-  $('#form').submit(function(e) {
-    e.preventDefault();
-    userInput = $('#user-input').val();
-    // run the scripts with the updated userInput
-    runScripts(data, 0);
-  });
-
-  document.querySelector('.experience-button').addEventListener('click', function() {
-    var data = [
-      { 
-        action: 'type',
-        strings: [userInput + "^400"],
-        output: ' ',
-        postDelay: 1000
-      }
-    ];
-    runScripts(data, 0);
-  });
-
   var data = [
     { 
       action: 'type',
