@@ -41,3 +41,16 @@ contact.addEventListener('click', () => {
     },
   })
 })
+
+const terminalText = document.querySelector('#terminal-text')
+
+let text = 'Zerkium'
+
+let i = 0
+
+setInterval(() => {
+  if (i < text.length) {
+    terminalText.textContent += text[i]
+    i++
+  }
+}, 50)
