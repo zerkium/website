@@ -20,7 +20,7 @@ $(function() {
   },
   { 
     action: 'type',
-    strings: ["that was easy!", ''],
+    strings: ["c'était rapide !", ''],
     postDelay: 2000
   }
   
@@ -68,3 +68,8 @@ function runScripts(data, pos) {
           break;
     }
 }
+
+document.getElementById('experience-link').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('experience').classList.add('visible');
+});
