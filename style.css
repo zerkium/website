@@ -1,5 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.hacking-animation {
+    background: #000;
+    height: 100%;
+
+    &__text {
+        bottom: 0;
+        font-family: monospace;
+				font-size: 18px;
+        left: 0;
+        line-height: 1.5rem;
+        padding: 2rem;
+        position: absolute;
+        right: 0;
+    }
+
+    &__character {
+        animation: type 500ms linear;
+        color: #00a000;
+    }
+}
+
+@keyframes type {
+    0% {
+        background: #FFF;
+        color: #FFF;
+    }
+
+    5% {
+        background: transparent;
+        color: #FFF;
+    }
+
+    100% {
+        background: transparent;
+        color: #00a000;
+    }
+
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
