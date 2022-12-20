@@ -19,6 +19,10 @@ $(document).ready(function() {
 	}, 20);
 });
 
+setTimeout(() => {
+  window.location.href = './main.html';
+}, 20000); // Redirect to the page after 20 seconds (20,000 milliseconds)
+
 var textString = `.
 .
 ///cqrCyber Console///
