@@ -1,3 +1,6 @@
+/*
+ * part of the style based on http://js13kgames.com/entries/lost-in-cyberspace
+ */
 body {
     margin: 0;
     background: black;
@@ -8,12 +11,12 @@ body {
 #terminal {
     height: 100vh;
 }
-/* glow */
-.terminal {
-    text-shadow: 0 0.2rem 1rem #0c7b46;
-}
 :root {
-    --background: #031e11;
+    --color: red;
+    --background: #200606;
+    --link-color: #3377FF;
+    --glow: 1;
+    --font: monospace;
 }
 @media (min-width: 800px) {
     :root {
@@ -29,6 +32,7 @@ body {
 .self {
     transform: scale(-1, 1);
 }
+/* flicker animation taken from http://goonhub.com/secret */
 .flicker {
     position: fixed;
     top: 0;
@@ -106,6 +110,9 @@ body {
     opacity: 0.37221;
   }
 }
+/* based on
+https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
+*/
 .scanlines {
     top: 0;
     left: 0;
@@ -212,6 +219,8 @@ body {
     left: 0;
     padding: 10px;
 }
+
+/* noise solution based on Temani Afif https://codepen.io/t_afif/pen/RwyqLKZ */
 .noise {
     position: fixed;
     top: 0;
@@ -219,7 +228,7 @@ body {
     bottom: 0;
     right: 0;
     z-index: 2000;
-    opacity: 0.05;
+    opacity: 0.1;
     pointer-events: none;
     background: 
         repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
@@ -230,10 +239,5 @@ body {
 @keyframes shift {
     100% {
         background-position: 50% 0, 50% 60%;
-    }
-}
-@media (prefers-reduced-motion) {
-    .noise, .flicker, .scanlines:before {
-        animation: none !important;
     }
 }
