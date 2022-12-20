@@ -167,5 +167,6 @@ async function pictuteInPicture() {
 function clear() {
     term.clear();
 }
-    
+
+github('jcubic/jquery.terminal');
 cssVars(); // ponyfill
