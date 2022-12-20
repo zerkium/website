@@ -28,14 +28,14 @@ var textString = `.
 ///cqrCyber Console///
     <umarcbs@hacking>:::cqrCyber
            Commence winterhacking module@cqrcyber.10.10.20
-           ...Connecting Kashmir...NO ANSWER
+           ...Connecting ...NO ANSWER
 ...
 ...
-//BornToHack&Crack\\\\
+//BornToHack\\\\
             ://StopcallingVictim...
             (**NO AnsWER**)....
                     PLEASE ...//STOP CALLING Victim...
-{enter. your. Name.}/// -- \\\\Umar Farooq\\\\
+{enter. your. Name.}/// -- \\\\Zerkium \\\\
   <M> Connecting Victim..:":":":
   ff
 
@@ -75,18 +75,6 @@ ZXC..<>Ckfkd<>vkvodkskclc...
 ..
 ..
 .....
-NORMALIZE CLothing ?? >> {STRING LOST}
-                        BIND ERROR <<DOWNREGION EXPOSED>> ;;' /
-                          0011011011101110110101101
-                           -----v-----
-                          (     |    )  <-----
-                          /     |    \\
-                         /     / \\    \\
-                         |     | |    |
-
-/string found
-///BetterCheckYourDrawers
-....ALSOFOUNDILDO
           ///(SHUTDOWN HACKING)
              {WHIPEDRIVE}
           whipe not found..
