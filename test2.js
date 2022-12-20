@@ -27,8 +27,8 @@ $(function() {
   runScripts(data, 0);
 });
 
-const experience = document.querySelector('experience-button');
-experienceButton.addEventListener('click'; () => 
+const experience = document.querySelector('experiences-button');
+experiencesButton.addEventListener('click'; () => 
 {
   action: 'type',
   strings: ["TEST",''],
