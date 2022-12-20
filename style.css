@@ -24,23 +24,9 @@ h1 {
 
   color: var(--text-color);
   font-size: 50px;
-  letter-spacing: -5px;
+  letter-spacing: -10px;
   margin-bottom: 20px;
  }
-
-let text = "Zerkium";
-let i = 0;
-
-function typeText() {
-  if (i < text.length) {
-    document.querySelector("h1").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeText, 100); // delay in milliseconds
-  }
-}
-
-typeText();
-
 
 h2 {
   color: var(--text-color);
