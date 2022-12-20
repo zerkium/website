@@ -68,3 +68,6 @@ function runScripts(data, pos) {
           break;
     }
 }
+document.getElementById('experience-link').addEventListener('click', function() {
+  document.getElementById('experience').classList.toggle('visible');
+});
