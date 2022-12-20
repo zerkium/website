@@ -19,6 +19,11 @@ body {
 }
 
 h1 {
+  
+  font-family: monospace;
+  background-color: #000;
+  white-space: pre-wrap;
+  
   color: var(--text-color);
   font-size: 50px;
   letter-spacing: -5px;
@@ -85,12 +90,6 @@ nav ul li {
   animation: 1s blink step-end infinite;
 }
 
-pre {
-  font-family: monospace;
-  background-color: #000;
-  color: #fff;
-  white-space: pre-wrap;
-}
 /* Define the typing blink */
 @keyframes blink {
   from,
