@@ -168,5 +168,13 @@ function clear() {
     term.clear();
 }
 
-github('jcubic/jquery.terminal');
+$('#terminal').terminal({
+    open: function() {
+        this.echo('you try to open').exec('close');
+    },
+    close: function() {
+        this.echo('you closed');
+    }
+});
+    
 cssVars(); // ponyfill
