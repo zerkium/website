@@ -2,41 +2,29 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Zerkium portfolio</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/prismjs/themes/prism-coy.css'>
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.css'><link rel="stylesheet" href="./terminal.css">
+  <title>CodePen - Vintage (Retro) Fake Terminal Emulator in JavaScript</title>
+  <link rel='stylesheet' href='https://unpkg.com/jquery.terminal/css/jquery.terminal.css'><link rel="stylesheet" href="./terminal.css">
 
 </head>
 <body>
-<div class="terminal-data mimik-run-output">
- <br>Found 3 feature<br>
- ----------------------------------------------<br>
- Feature: Experiences  <span class="gray"># ./features/bottles.feature</span><br><br> 
- Feature: Skills  <span class="gray"># ./features/bottles.feature</span><br><br>
- Feature: Projets <span class="gray"># ./features/bottles.feature</span><br><br>
-   
- <p class="output">Selectionnez la Feature <button class="#Experiences" id="experiences-button">Experiences</button> / <button class="#Skills">Skills</button> / <button class="#Projets">Projets</button>.</p>
- <br>
-    <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
-&nbsp;&nbsp;Features&nbsp;&nbsp;&nbsp;Scenarios&nbsp;&nbsp;&nbsp;Steps&nbsp;&nbsp;&nbsp;Passed&nbsp;&nbsp;&nbsp;Failed<br>
-    <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
-&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓ 9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0      <br>
-  <br>
-&nbsp;&nbsp;Completed 3 feature in 0.01s<br>
-  <br>
- 
+<!-- partial:index.partial.html -->
+<div class="tv">
+    <div id="terminal"></div>
+    <div class="collection external terminal">
+        See Also: <a href="https://codepen.io/jcubic/pen/JjpzzOr" target="top">Red version</a>, or <a href="https://codepen.io/collection/AeGGxz" target="top">Vintage Screen Effects</a>, <a href="https://codepen.io/collection/Mgrkmw"  target="top">Terminal Things</a>, and <a href="https://codepen.io/collection/LPjoaW" target="top">other jQuery Terminal demos</a>.
+    </div>
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
 </div>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/jquery'></script>
-<script src='https://cdn.jsdelivr.net/gh/jcubic/static/js/wcwidth.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/js-polyfills/keyboard.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.terminal/js/unix_formatting.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/prismjs/prism.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.terminal/js/prism.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/jquery.terminal/js/xml_formatting.js'></script>
-<script src='https://codepen.io/jcubic/pen/WZjbgq.js'></script><script  src="./terminal.js"></script>
+<script src='https://unpkg.com/jquery.terminal/js/jquery.terminal.js'></script>
+<script src='https://unpkg.com/jquery.terminal/js/jquery.mousewheel-min.js'></script>
+<script src='https://unpkg.com/js-polyfills/keyboard.js'></script>
+<script src='https://codepen.io/jcubic/pen/WZjbgq.js'></script>
+<script src='https://unpkg.com/treeify@1.0.1/treeify.js'></script>
+<script src='https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js'></script><script  src="./terminal.js"></script>
 
 </body>
 </html>
