@@ -23,6 +23,17 @@ h1 {
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: 20px;
+  /* Define the animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  /* Apply the animation to a block of text */ 
+  .hacker-text {
+    animation: typing 3s;
+    white-space: nowrap;
+    overflow: hidden;
+}
 }
 
 h2 {
@@ -84,13 +95,13 @@ nav ul li {
   font-weight: 700;
   animation: 1s blink step-end infinite;
 }
-
+/* Define the typing blink */
 @keyframes blink {
   from,
   to {
     color: transparent;
   }
-
+  
   50% {
     color: var(--text-color);
   }
