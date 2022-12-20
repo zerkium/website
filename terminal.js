@@ -5,7 +5,6 @@ function exit() {
     term.disable();
 }
 
-// ref: https://stackoverflow.com/q/67322922/387194
 var __EVAL = (s) => eval(`void (__EVAL = ${__EVAL}); ${s}`);
 
 var term = $('#terminal').terminal(function(command, term) {
@@ -50,7 +49,7 @@ var term = $('#terminal').terminal(function(command, term) {
     },
     prompt: 'js> '
 });
-// for codepen preview
+
 if (!term.enabled()) {
     term.find('.cursor').addClass('blink');
 }
