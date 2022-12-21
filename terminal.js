@@ -128,6 +128,12 @@ function pause() {
     });
 }
 
+function experience() {
+    if (input === "experience") {
+        term.echo("TEST");
+    }
+}
+
 function grab() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         term.pause();
