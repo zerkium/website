@@ -12,29 +12,29 @@ var term = $('#terminal').terminal(function(command, term) {
     if (cmd.name === 'exit') {
         exit();
     } else if (cmd.name === 'camera') {
-        term.echo('did you mean [[b;#fff;]camera()]?');
+        term.echo('did you mean [[b;#00F3FF;]camera()]?');
     } else if (cmd.name === 'grab') {
-        term.echo('did you mean [[b;#fff;]grab()]?');
+        term.echo('did you mean [[b;#00F3FF;]grab()]?');
     } else if (cmd.name === 'play') {
-        term.echo('did you mean [[b;#fff;]play()]?');
+        term.echo('did you mean [[b;#00F3FF;]play()]?');
     } else if (cmd.name === 'pause') {
-        term.echo('did you mean [[b;#fff;]pause()]?');
+        term.echo('did you mean [[b;#00F3FF;]pause()]?');
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
     } else if (cmd.name === 'help()') {
-        term.echo('Type [[b;#FF0000;]exit] to see turn off animation.');
-        term.echo('Type [[b;#FF0000;]grab()] function to get the scre' +
+        term.echo('Type [[b;#00F3FF;]exit] to see turn off animation.');
+        term.echo('Type [[b;#00F3FF;]grab()] function to get the scre' +
                   'enshot from your camera');
-        term.echo('Type [[b;#FF0000;]camera()] to get video and [[b;#FF0000;]pause()]/[[b;#FF0000;]play()] to stop/play');
-        term.echo('Type [[b;#FF0000;]experiences()] to get the details about my past experiences');
-        term.echo('Type [[b;#FF0000;]skills()] to get the details about my skills');
-        term.echo('Type [[b;#FF0000;]projets()] to get the details about my projects');
-        term.echo('Type [[b;#FF0000;]help()] to see this message again')
+        term.echo('Type [[b;#00F3FF;]camera()] to get video and [[b;#00F3FF;]pause()]/[[b;#00F3FF;]play()] to stop/play');
+        term.echo('Type [[b;#00F3FF;]experiences()] to get the details about my past experiences');
+        term.echo('Type [[b;#00F3FF;]skills()] to get the details about my skills');
+        term.echo('Type [[b;#00F3FF;]projets()] to get the details about my projects');
+        term.echo('Type [[b;#00F3FF;]help()] to see this message again')
     } else if (command === 'projects()') {
         term.echo('');
-        term.echo('[[b;#FF0000;]TIERING MODEL] - [[b;#f7df1e;]Dans le cadre d\'un antécédent de piratage d\'un client, j\'ai été missionné sur la sécurisation de l\'infrastructure informatique de celui-ci. il s\'agissait de mettre en place un model en "oignon", tiering model avancé par microsoft. il est nommé ainsi car il se base sur les différentes couches d\'un oignon rapporté à la sécurité des systemes informatiques, la couche 0 étant la plus sécurisée. Cette sécurité à demandé la mise en place de LAPS permettant la sécurisation des comptes, de serveurs dit de passerelles pour faire le rebond entre les couches, et de nombreuses GPO visant à la l\'isolation des différentes couches. Aucun outil tiers n\'a étés utilisé lors de ce projet, puisque j\'avait développé a cet effet un script powershell me permettant la remodélisation complète de la structure AD, la création des GPO, des règles de firewall de chaque tiers, et bien d\'autres.\n\n]');
-        term.echo('[[b;#FF0000;]PENTEST] - [[b;#B000CF;]Mon amour pour la cybersécurité se retrouve au quotidien lorsque j\'étoffe mes compétences sur des sites spécialisés comme tryhack me, root-me ou encore hack the box, où j\'ai atteint déjà un bon niveau, 7000 ème sur root-me, et 61172 ème sur 156 521 5 utilisateurs try hack me. Il vous est possible de me retrouver sur certains capture the flag comme celui de la DGSE, le FSCE france cyber security challenge. Ce sont des challenges de piratage où il faut infecter une machine hôte et récupérer des "flags", un pour l\'utilisateur et un "root" pour le system. Je prépare en amont quelques certifications comme l\'EJPT, le CEH ainsi que la pentest + de comptia. Dans cette optique la j\'utilise très souvent des outils tels que netcat, aircrack, john the ripper, hydra, wireshark et bien d\'autres. Je parcours de nombreux sites tels que github et stack overflow qui me permettent l\'accès à une très large base de connaissance, et utilise des langages de programmation tels que batch, powershell, python, html, css ou encore php.\n\n]');
-        term.echo('[[b;#FF0000;]CLOUD] - [[b;#00F3FF;]L\'avenir étant très porté sur le cloud j\'ai pu manipuler plusieurs plateforme comme AWS, AZURE, ou LINODE pour l\'hébergement de certaines VM de tests. De plus étant passionné de jeux vidéos il m\'est naturelement venu à l\'esprit d\'utiliser le cloud ainsi que docker pour héberger plusieurs serveurs de jeux pour jouer avec mes amis aisément. Chez KOESIO nous avons de notre côté un service hébergement / cloud, permettant comme son nom l\'indique l\'hébergement de son infrastructure informatique / applicative / sauvegarde dans nos datacenters.\n\n]');      
+        term.echo('[[b;#00F3FF;]TIERING MODEL] - [[b;#f7df1e;]Dans le cadre d\'un antécédent de piratage d\'un client, j\'ai été missionné sur la sécurisation de l\'infrastructure informatique de celui-ci. il s\'agissait de mettre en place un model en "oignon", tiering model avancé par microsoft. il est nommé ainsi car il se base sur les différentes couches d\'un oignon rapporté à la sécurité des systemes informatiques, la couche 0 étant la plus sécurisée. Cette sécurité à demandé la mise en place de LAPS permettant la sécurisation des comptes, de serveurs dit de passerelles pour faire le rebond entre les couches, et de nombreuses GPO visant à la l\'isolation des différentes couches. Aucun outil tiers n\'a étés utilisé lors de ce projet, puisque j\'avait développé a cet effet un script powershell me permettant la remodélisation complète de la structure AD, la création des GPO, des règles de firewall de chaque tiers, et bien d\'autres.\n\n]');
+        term.echo('[[b;#00F3FF;]PENTEST] - [[b;#00F3FF;]Mon amour pour la cybersécurité se retrouve au quotidien lorsque j\'étoffe mes compétences sur des sites spécialisés comme tryhack me, root-me ou encore hack the box, où j\'ai atteint déjà un bon niveau, 7000 ème sur root-me, et 61172 ème sur 156 521 5 utilisateurs try hack me. Il vous est possible de me retrouver sur certains capture the flag comme celui de la DGSE, le FSCE france cyber security challenge. Ce sont des challenges de piratage où il faut infecter une machine hôte et récupérer des "flags", un pour l\'utilisateur et un "root" pour le system. Je prépare en amont quelques certifications comme l\'EJPT, le CEH ainsi que la pentest + de comptia. Dans cette optique la j\'utilise très souvent des outils tels que netcat, aircrack, john the ripper, hydra, wireshark et bien d\'autres. Je parcours de nombreux sites tels que github et stack overflow qui me permettent l\'accès à une très large base de connaissance, et utilise des langages de programmation tels que batch, powershell, python, html, css ou encore php.\n\n]');
+        term.echo('[[b;#00F3FF;]CLOUD] - [[b;#00F3FF;]L\'avenir étant très porté sur le cloud j\'ai pu manipuler plusieurs plateforme comme AWS, AZURE, ou LINODE pour l\'hébergement de certaines VM de tests. De plus étant passionné de jeux vidéos il m\'est naturelement venu à l\'esprit d\'utiliser le cloud ainsi que docker pour héberger plusieurs serveurs de jeux pour jouer avec mes amis aisément. Chez KOESIO nous avons de notre côté un service hébergement / cloud, permettant comme son nom l\'indique l\'hébergement de son infrastructure informatique / applicative / sauvegarde dans nos datacenters.\n\n]');      
     } else if (command === 'skills()') {
         term.echo('Jsuis trop fort !');
     } else if (command === 'experiences()') {
