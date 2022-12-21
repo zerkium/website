@@ -40,7 +40,7 @@ $(function() {
         exit();
         break;
       case 'echo':
-        term.echo(responses[cmd.name]);
+        term.echo(cmd.rest);
         break;
       default:
         if (responses[cmd.name]) {
@@ -76,7 +76,7 @@ $(function() {
       this.echo('Type [[b;#fff;]skills()] to get the details about my skills');
       this.echo('Type [[b;#fff;]projets()] to get the details about my projects');
       this.echo('Type [[b;#fff;]help()] to see this message again');
-    },
+    }
   });
 });
 
