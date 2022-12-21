@@ -103,8 +103,7 @@ var acceptStream = (function() {
     return 'srcObject' in document.createElement('video');
 })();
 function camera() {
-    if (cmd.name === 'camera' && cmd.args.length === 0) {
-    } else if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         term.pause();
         var media = navigator.mediaDevices.getUserMedia(constraints);
         media.then(function(mediaStream) {
