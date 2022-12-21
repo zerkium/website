@@ -14,7 +14,7 @@ var term = $('#terminal').terminal(function(command, term) {
         exit();
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
-    } else if (cmd.name === 'help') {
+    } else if (cmd.name === 'help()') {
         term.echo('Type [[b;#fff;]exit] to see turn off animation.');
         term.echo('Type [[b;#fff;]grab()] function to get the scre' +
                   'enshot from your camera');
@@ -22,6 +22,7 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences');
         term.echo('Type [[b;#fff;]skills()] to get the details about my skills');
         term.echo('Type [[b;#fff;]projets()] to get the details about my projects');
+        term.echo('Type [[b;#fff;]help()] to see this message again')
     } else if (command === 'projects()') {
         term.echo('A remplir');
     } else if (command === 'skills()') {
