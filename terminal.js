@@ -132,7 +132,7 @@ function pause() {
 
 function experience() {
     if (input === "experience") {
-        term.echo("TEST");
+        term.echo("OUI OUI BAGUETTE");
     }
 }
 
