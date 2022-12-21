@@ -10,7 +10,7 @@ body {
 }
 /* glow */
 .terminal {
-    text-shadow: 0 0.2rem 1rem #0c7b46;
+    text-shadow: 0 0.2rem 1rem #7B0C0C;
 }
 :root {
     --background: #200606;
