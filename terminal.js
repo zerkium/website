@@ -14,11 +14,11 @@ var term = $('#terminal').terminal(function(command, term) {
         exit();
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
-    } else if (command === 'projects') {
+    } else if (command === 'projects()') {
         term.echo('A remplir');
-    } else if (command === 'skills') {
+    } else if (command === 'skills()') {
         term.echo('Jsuis trop fort !');
-    } else if (command === 'experience') {
+    } else if (command === 'experience()') {
         term.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
         term.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
         term.echo('informaticien - Cyberprovence / 2019 - 2021');
