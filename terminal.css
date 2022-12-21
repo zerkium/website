@@ -10,7 +10,7 @@ body {
 }
 :root {
     background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
-    --color: red;
+    /* --color: red;*/
     --background: #200606;
     --link-color: #3377FF;
     --glow: 1;
