@@ -13,7 +13,7 @@ body {
     --background: #200606;
     --link-color: #3377FF;
     --glow: 1;
-    --font: 'Inconsolata', Helvetica, sans-serif;
+    --font: 'monospace', Helvetica, sans-serif;
 }
 @media (min-width: 800px) {
     :root {
