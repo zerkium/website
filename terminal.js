@@ -7,46 +7,39 @@ function exit() {
 
 // ref: https://stackoverflow.com/q/67322922/387194
 var __EVAL = (s) => eval(`void (__EVAL = ${__EVAL}); ${s}`);
-var responses = {
-  exit: '',
-  camera: 'did you mean [[b;#fff;]camera()]?',
-  grab: 'did you mean [[b;#fff;]grab()]?',
-  play: 'did you mean [[b;#fff;]play()]?',
-  pause: 'did you mean [[b;#fff;]pause()]?',
-  echo: cmd.rest,
-  help: 'Type [[b;#fff;]exit] to see turn off animation.\n' +
-        'Type [[b;#fff;]grab()] function to get the screenshot from your camera\n' +
-        'Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play\n' +
-        'Type [[b;#fff;]experiences()] to get the details about my past experiences\n' +
-        'Type [[b;#fff;]skills()] to get the details about my skills\n' +
-        'Type [[b;#fff;]projets()] to get the details about my projects\n' +
-        'Type [[b;#fff;]help()] to see this message again',
-  projects: 'A remplir',
-  skills: 'Jsuis trop fort !',
-  experiences: 'Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023\n' +
-               'technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022\n' +
-               'informaticien - Cyberprovence / 2019 - 2021\n' +
-               'employé polyvalent - Mcdonalds / 2018 - 2020',
-}
-
 var term = $('#terminal').terminal(function(command, term) {
-  var cmd = $.terminal.parse_command(command);
-  switch (cmd.name) {
-    case 'exit':
-      exit();
-      break;
-    case 'echo':
-      term.echo(responses[cmd.name]);
-      break;
-    default:
-      if (responses[cmd.name]) {
-        term.echo(responses[cmd.name]);
-      } else {
-        term.echo('Invalid command');
-      }
-      break;
-  }
-}else if (command !== '') {
+    var cmd = $.terminal.parse_command(command);
+    if (cmd.name === 'exit') {
+        exit();
+    } else if (cmd.name === 'camera') {
+        term.echo('did you mean [[b;#fff;]camera()]?');
+    } else if (cmd.name === 'grab') {
+        term.echo('did you mean [[b;#fff;]grab()]?');
+    } else if (cmd.name === 'play') {
+        term.echo('did you mean [[b;#fff;]play()]?');
+    } else if (cmd.name === 'pause') {
+        term.echo('did you mean [[b;#fff;]pause()]?');
+    } else if (cmd.name === 'echo') {
+        term.echo(cmd.rest);
+    } else if (cmd.name === 'help()') {
+        term.echo('Type [[b;#fff;]exit] to see turn off animation.');
+        term.echo('Type [[b;#fff;]grab()] function to get the scre' +
+                  'enshot from your camera');
+        term.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
+        term.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences');
+        term.echo('Type [[b;#fff;]skills()] to get the details about my skills');
+        term.echo('Type [[b;#fff;]projets()] to get the details about my projects');
+        term.echo('Type [[b;#fff;]help()] to see this message again')
+    } else if (command === 'projects()') {
+        term.echo('A remplir');
+    } else if (command === 'skills()') {
+        term.echo('Jsuis trop fort !');
+    } else if (command === 'experiences()') {
+        term.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
+        term.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
+        term.echo('informaticien - Cyberprovence / 2019 - 2021');
+        term.echo('employé polyvalent - Mcdonalds / 2018 - 2020');
+    }else if (command !== '') {
         try {
             var result = __EVAL(command);
             if (result && result instanceof $.fn.init) {
