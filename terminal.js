@@ -14,6 +14,8 @@ var term = $('#terminal').terminal(function(command, term) {
         exit();
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
+    } else if (command === 'experience') {
+        term.echo('TEST');
     } else if (command !== '') {
         try {
             var result = __EVAL(command);
