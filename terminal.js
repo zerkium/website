@@ -13,7 +13,13 @@ var term = $('#terminal').terminal(function(command, term) {
     if (cmd.name === 'exit') {
         exit();
     } else if (cmd.name === 'camera') {
-        term.echo('did you mean [[b;#fff;]camera()]');
+        term.echo('did you mean [[b;#fff;]camera()]?');
+    } else if (cmd.name === 'grab') {
+        term.echo('did you mean [[b;#fff;]grab()]?');
+    } else if (cmd.name === 'play') {
+        term.echo('did you mean [[b;#fff;]play()]?');
+    } else if (cmd.name === 'pause') {
+        term.echo('did you mean [[b;#fff;]pause()]?');
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
     } else if (cmd.name === 'help()') {
