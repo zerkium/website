@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 :root {
-    word-wrap: break-word;
+    background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
     --color: red;
     --background: #200606;
     --link-color: #3377FF;
@@ -139,7 +139,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
       rgba(255,255,255,0.98) 51%,
       rgba(255,0,0,0) 100%
   ); /* W3C */
-  opacity: .001;
+  opacity: .1;
 }
 .scanlines:after {
   box-shadow: 0 2px 6px rgba(25,25,25,0.2),
