@@ -218,7 +218,8 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
     padding: 10px;
 }
 
-/* noise solution based on Temani Afif https://codepen.io/t_afif/pen/RwyqLKZ */
+/* noise solution based on Temani Afif https://codepen.io/t_afif/pen/RwyqLKZ 
+supprimée car rend illisible le texte
 .noise {
     position: fixed;
     top: 0;
@@ -233,7 +234,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 50%/2500px 2500px;
     background-blend-mode: difference;
     animation: shift .2s infinite alternate;
-}
+}*/
 @keyframes shift {
     100% {
         background-position: 50% 0, 50% 60%;
