@@ -14,11 +14,19 @@ var term = $('#terminal').terminal(function(command, term) {
         exit();
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
+    } else if (cmd.name === 'help') {
+        term.echo('Type [[b;#fff;]exit] to see turn off animation.');
+        term.echo('Type [[b;#fff;]grab()] function to get the scre' +
+                  'enshot from your camera');
+        term.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
+        term.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences');
+        term.echo('Type [[b;#fff;]skills()] to get the details about my skills');
+        term.echo('Type [[b;#fff;]projets()] to get the details about my projects');
     } else if (command === 'projects()') {
         term.echo('A remplir');
     } else if (command === 'skills()') {
         term.echo('Jsuis trop fort !');
-    } else if (command === 'experience()') {
+    } else if (command === 'experiences()') {
         term.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
         term.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
         term.echo('informaticien - Cyberprovence / 2019 - 2021');
@@ -46,11 +54,11 @@ var term = $('#terminal').terminal(function(command, term) {
     onInit: function() {
         set_size();
         this.echo('Type [[b;#fff;]exit] to see turn off animation.');
-        this.echo('Type and execute [[b;#fff;]grab()] function to get the scre' +
+        this.echo('Type [[b;#fff;]grab()] function to get the scre' +
                   'enshot from your camera');
         this.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
-        this.echo('Type [[b;#fff;]experience()] to get the details about my past experiences')
-        this.echo('Type [[b;#fff;]Skills()] to get the details about my skills')
+        this.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences')
+        this.echo('Type [[b;#fff;]skills()] to get the details about my skills')
         this.echo('Type [[b;#fff;]projets()] to get the details about my projects')
     },
     onClear: function() {
