@@ -109,64 +109,43 @@ var acceptStream = (function() {
     return 'srcObject' in document.createElement('video');
 })();
 function camera() {
-  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    term.pause();
-    var media = navigator.mediaDevices.getUserMedia(constraints);
-    media.then(function(mediaStream) {
-      term.resume();
-      var stream;
-      if (!acceptStream) {
-        stream = window.URL.createObjectURL(mediaStream);
-      } else {
-        stream = mediaStream;
-      }
-      term.echo('<video data-play="true" class="self"></video>', {
-        raw: true,
-        onClear: function() {
-          if (!acceptStream) {
-            URL.revokeObjectURL(stream);
-          }
-          mediaStream.getTracks().forEach(track => track.stop());
-        },
-        finalize: function(div) {
-          var video = div.find('video');
-          if (!video.length) {
-            return;
-          }
-          if (acceptStream) {
-            video[0].srcObject = stream;
-          } else {
-            video[0].src = stream;
-          }
-          if (video.data('play')) {
-            video[0].play();
-          }
-
-          // Create MediaRecorder
-          const recorder = new MediaRecorder(mediaStream);
-
-          // Start recording
-          recorder.start();
-
-          // Handle dataavailable
-		  recorder.addEventListener('dataavailable', (event) => {
-  // Create Blob from recorded data and create URL
-  const blob = new Blob([event.data], { type: 'video/webm' });
-  const url = URL.createObjectURL(blob);
-
-  // Create a element with download attribute and initiate download
-  const a = document.createElement('a');
-  a.download = 'recorded-media.webm';
-  a.href = url;
-  document.body.appendChild(a);
-  a.click();
-});
-
-// Stop recording when media stream ends
-mediaStream.addEventListener('ended', () => {
-  recorder.stop();
-});
-
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        term.pause();
+        var media = navigator.mediaDevices.getUserMedia(constraints);
+        media.then(function(mediaStream) {
+            term.resume();
+            var stream;
+            if (!acceptStream) {
+                stream = window.URL.createObjectURL(mediaStream);
+            } else {
+                stream = mediaStream;
+            }
+            term.echo('<video data-play="true" class="self"></video>', {
+                raw: true,
+                onClear: function() {
+                    if (!acceptStream) {
+                        URL.revokeObjectURL(stream);
+                    }
+                    mediaStream.getTracks().forEach(track => track.stop());
+                },
+                finalize: function(div) {
+                    var video = div.find('video');
+                    if (!video.length) {
+                        return;
+                    }
+                    if (acceptStream) {
+                        video[0].srcObject = stream;
+                    } else {
+                        video[0].src = stream;
+                    }
+                    if (video.data('play')) {
+                        video[0].play();
+                    }
+                }
+            });
+        });
+    }
+}
 var play = function() {
     var video = term.find('video').slice(-1);
     if (video.length) {
