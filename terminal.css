@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background: black;
+    word-wrap: break-word;
 }
 .terminal img[src*="blob:"], .terminal video {
     max-width: 100%;
@@ -209,7 +210,6 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 }
 #terminal {
     padding-bottom: 36px;
-    word-wrap: break-word;
 }
 .collection {
     position: absolute;
