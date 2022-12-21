@@ -1,13 +1,13 @@
 body {
     margin: 0;
     background: black;
-    word-wrap: break-word;
 }
 .terminal img[src*="blob:"], .terminal video {
     max-width: 100%;
 }
 #terminal {
     height: 100vh;
+    word-wrap: break-word;
 }
 :root {
     --color: red;
