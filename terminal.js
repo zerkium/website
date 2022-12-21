@@ -14,8 +14,15 @@ var term = $('#terminal').terminal(function(command, term) {
         exit();
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
+    } else if (command === 'projects') {
+        term.echo('A remplir');
+    } else if (command === 'skills') {
+        term.echo('Jsuis trop fort !');
     } else if (command === 'experience') {
-        term.echo('Administrateur systèmes, réseaux et sécurité - KOESIO / 2022 - 2023');
+        term.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
+        term.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
+        term.echo('informaticien - Cyberprovence / 2019 - 2021');
+        term.echo('employé polyvalent - Mcdonalds / 2018 - 2020');
     } else if (command !== '') {
         try {
             var result = __EVAL(command);
@@ -42,6 +49,9 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('Type and execute [[b;#fff;]grab()] function to get the scre' +
                   'enshot from your camera');
         this.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
+        this.echo('Type [[b;#fff;]experience] to get the details about my past experiences')
+        this.echo('Type [[b;#fff;]Skills] to get the details about my skills')
+        this.echo('Type [[b;#fff;]projets] to get the details about my projects')
     },
     onClear: function() {
         console.log(this.find('video').length);
