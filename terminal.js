@@ -60,6 +60,7 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences')
         this.echo('Type [[b;#fff;]skills()] to get the details about my skills')
         this.echo('Type [[b;#fff;]projets()] to get the details about my projects')
+        this.echo('Type [[b;#fff;]help()] to see this message again')
     },
     onClear: function() {
         console.log(this.find('video').length);
