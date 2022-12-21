@@ -15,7 +15,7 @@ var term = $('#terminal').terminal(function(command, term) {
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
     } else if (command === 'experience') {
-        term.echo('TEST');
+        term.echo('Administrateur systèmes, réseaux et sécurité - KOESIO / 2022 - 2023');
     } else if (command !== '') {
         try {
             var result = __EVAL(command);
@@ -128,12 +128,6 @@ function pause() {
     term.find('video').each(function() {
         this.pause(); 
     });
-}
-
-function experience() {
-    if (input === "experience") {
-        term.echo("OUI OUI BAGUETTE");
-    }
 }
 
 function grab() {
