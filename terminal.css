@@ -139,7 +139,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
       rgba(255,255,255,0.98) 51%,
       rgba(255,0,0,0) 100%
   ); /* W3C */
-  opacity: .1;
+  opacity: .001;
 }
 .scanlines:after {
   box-shadow: 0 2px 6px rgba(25,25,25,0.2),
