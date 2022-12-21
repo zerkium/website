@@ -7267,8 +7267,7 @@
     // :: TERMINAL PLUGIN CODE
     // -----------------------------------------------------------------------
     var version_set = !$.terminal.version.match(/^\{\{/);
-    var copyright = 'zerkium' +
-        '<https://jcubic.pl/me>';
+    var copyright = 'zerkium';
     var version_string = version_set ? ' v. ' + $.terminal.version : ' ';
     // regex is for placing version string aligned to the right
     var reg = new RegExp(' {' + version_string.length + '}$');
@@ -7282,12 +7281,12 @@
         [name_ver, copyright.replace(/^Copyright | *<.*>/g, '')],
         [name_ver, copyright.replace(/^Copyright /, '')],
         [
-            '      _______                 ________                        __',
-            '     / / _  /_ ____________ _/__  ___/______________  _____  / /',
-            ' __ / / // / // / _  / _/ // / / / _  / _/     / /  \\/ / _ \\/ /',
-            '/  / / // / // / ___/ // // / / / ___/ // / / / / /\\  / // / /__',
-            '\\___/____ \\\\__/____/_/ \\__ / /_/____/_//_/_/_/_/_/  \\/\\__\\_\\___/',
-            '         \\/          /____/                                   '
+            '_____         _    _',
+            '|__  /___ _ __| | _(_)_   _ _ __ ___',
+            '  / // _ \ "__| |/ / | | | | "_ ` _ \',
+            ' / /|  __/ |  |   <| | |_| | | | | | |',
+            '/____\___|_|  |_|\_\_|\__,_|_| |_| |_|',
+            '                                      '
                 .replace(reg, ' ') + version_string,
             copyright
         ],
