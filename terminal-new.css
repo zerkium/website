@@ -1,10 +1,3 @@
-/*
- * CSS Credits:
- *  the starting point http://js13kgames.com/entries/lost-in-cyberspace
- *  flicker animation taken from http://goonhub.com/secret
- *  scanlines based on https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
- *  noise solution based on Temani Afif https://codepen.io/t_afif/pen/RwyqLKZ
- */
 body {
     margin: 0;
     background: black;
@@ -20,7 +13,7 @@ body {
     text-shadow: 0 0.2rem 1rem #0c7b46;
 }
 :root {
-    --background: #031e11;
+    --background: #200606;
 }
 @media (min-width: 800px) {
     :root {
@@ -219,7 +212,7 @@ body {
     left: 0;
     padding: 10px;
 }
-.noise {
+/*.noise {
     position: fixed;
     top: 0;
     left: 0;
@@ -233,7 +226,7 @@ body {
         repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 50%/2500px 2500px;
     background-blend-mode: difference;
     animation: shift .2s infinite alternate;
-}
+}*/
 @keyframes shift {
     100% {
         background-position: 50% 0, 50% 60%;
