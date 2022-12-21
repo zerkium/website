@@ -12,7 +12,7 @@ body {
     --color: red;
     --background: #200606;
     --link-color: #3377FF;
-    /* --glow: 1;*/
+    --glow: 1;
     --font: 'Inconsolata', Helvetica, sans-serif;
 }
 @media (min-width: 800px) {
