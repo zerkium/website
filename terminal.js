@@ -49,9 +49,9 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('Type and execute [[b;#fff;]grab()] function to get the scre' +
                   'enshot from your camera');
         this.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
-        this.echo('Type [[b;#fff;]experience] to get the details about my past experiences')
-        this.echo('Type [[b;#fff;]Skills] to get the details about my skills')
-        this.echo('Type [[b;#fff;]projets] to get the details about my projects')
+        this.echo('Type [[b;#fff;]experience()] to get the details about my past experiences')
+        this.echo('Type [[b;#fff;]Skills()] to get the details about my skills')
+        this.echo('Type [[b;#fff;]projets()] to get the details about my projects')
     },
     onClear: function() {
         console.log(this.find('video').length);
