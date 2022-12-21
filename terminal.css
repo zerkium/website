@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 :root {
-    --color: yellow;
+    --color: white;
     --background: #200606;
     --link-color: #3377FF;
     --glow: 1;
