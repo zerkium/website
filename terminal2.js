@@ -1,11 +1,51 @@
 /**@license
- *  _____         _    _                 
- * |__  /___ _ __| | _(_)_   _ _ __ ___  
- *   / // _ \ '__| |/ / | | | | '_ ` _ \ 
- *  / /|  __/ |  |   <| | |_| | | | | | |
- * /____\___|_|  |_|\_\_|\__,_|_| |_| |_| 
+ *       __ _____                     ________                              __
+ *      / // _  /__ __ _____ ___ __ _/__  ___/__ ___ ______ __ __  __ ___  / /
+ *  __ / // // // // // _  // _// // / / // _  // _//     // //  \/ // _ \/ /
+ * /  / // // // // // ___// / / // / / // ___// / / / / // // /\  // // / /__
+ * \___//____ \\___//____//_/ _\_  / /_//____//_/ /_/ /_//_//_/ /_/ \__\_\___/
+ *           \/              /____/                              version 2.35.0
+ *
+ * This file is part of jQuery Terminal. https://terminal.jcubic.pl
+ *
+ * Copyright (c) 2010-2022 Jakub T. Jankiewicz <https://jcubic.pl/me>
+ * Released under the MIT license
+ *
+ * Contains:
+ *
+ * Storage plugin Distributed under the MIT License
+ * modified to work from Data URIs that block storage and cookies in Chrome
+ * Copyright (c) 2010 Dave Schindler
+ *
+ * jQuery Timers licenced with the WTFPL
+ * <http://jquery.offput.ca/timers/>
+ *
+ * Cross-Browser Split 1.1.1
+ * Copyright 2007-2012 Steven Levithan <stevenlevithan.com>
+ * Available under the MIT License
+ *
+ * jQuery Caret
+ * Copyright (c) 2009, Gideon Sireling
+ * 3 clause BSD License
+ *
+ * sprintf.js
+ * Copyright (c) 2007-2013 Alexandru Marasteanu <hello at alexei dot ro>
+ * licensed under 3 clause BSD license
+ *
+ * debounce function from Lodash
+ * Copyright JS Foundation and other contributors <https://js.foundation/>
+ * The MIT License
+ *
+ * emoji regex v9.0.0 by Mathias Bynens
+ * MIT license
+ *
+ * broken image by Sophia Bai from the Noun Project (CC-BY)
+ *
+ * Date: Mon, 12 Dec 2022 22:33:59 +0000
  */
-
+/* global define, Map */
+/* eslint-disable */
+/* istanbul ignore next */
 (function(ctx) {
     var sprintf = function() {
         if (!sprintf.cache.hasOwnProperty(arguments[0])) {
@@ -7227,7 +7267,8 @@
     // :: TERMINAL PLUGIN CODE
     // -----------------------------------------------------------------------
     var version_set = !$.terminal.version.match(/^\{\{/);
-    var copyright = 'Zerkium property';
+    var copyright = 'Copyright (c) 2011-2022 Jakub T. Jankiewicz ' +
+        '<https://jcubic.pl/me>';
     var version_string = version_set ? ' v. ' + $.terminal.version : ' ';
     // regex is for placing version string aligned to the right
     var reg = new RegExp(' {' + version_string.length + '}$');
@@ -7237,15 +7278,16 @@
     // :: Terminal Signatures
     // -----------------------------------------------------------------------
     var signatures = [
-        ['jQuery Terminal','Zerkium'],
+        ['jQuery Terminal', '(c) 2011-2022 jcubic'],
         [name_ver, copyright.replace(/^Copyright | *<.*>/g, '')],
         [name_ver, copyright.replace(/^Copyright /, '')],
         [
-            '      _____         _    _',
-            '     |__  /___ _ __| | _(_)_   _ _ __ ___ ',
-            '       / // _ \ "__| |/ / | | | | "_ ` _ \',
-            '      / /|  __/ |  |   <| | |_| | | | | | |',
-            '     /____\___|_|  |_|\_\_|\__,_|_| |_| |_|  ',
+            '      _______                 ________                        __',
+            '     / / _  /_ ____________ _/__  ___/______________  _____  / /',
+            ' __ / / // / // / _  / _/ // / / / _  / _/     / /  \\/ / _ \\/ /',
+            '/  / / // / // / ___/ // // / / / ___/ // / / / / /\\  / // / /__',
+            '\\___/____ \\\\__/____/_/ \\__ / /_/____/_//_/_/_/_/_/  \\/\\__\\_\\___/',
+            '         \\/          /____/                                   '
                 .replace(reg, ' ') + version_string,
             copyright
         ],
