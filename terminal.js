@@ -12,6 +12,8 @@ var term = $('#terminal').terminal(function(command, term) {
     var cmd = $.terminal.parse_command(command);
     if (cmd.name === 'exit') {
         exit();
+    } else if (cmd.name === 'camera') {
+        term.echo('did you mean [[b;#fff;]camera()]');
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
     } else if (cmd.name === 'help()') {
@@ -101,7 +103,8 @@ var acceptStream = (function() {
     return 'srcObject' in document.createElement('video');
 })();
 function camera() {
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    if (cmd.name === 'camera' && cmd.args.length === 0) {
+    } else if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         term.pause();
         var media = navigator.mediaDevices.getUserMedia(constraints);
         media.then(function(mediaStream) {
