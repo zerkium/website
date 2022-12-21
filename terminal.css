@@ -7,9 +7,9 @@ body {
 }
 #terminal {
     height: 100vh;
-    word-wrap: break-word;
 }
 :root {
+    word-wrap: break-word;
     --color: red;
     --background: #200606;
     --link-color: #3377FF;
