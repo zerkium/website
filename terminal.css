@@ -32,7 +32,7 @@ body {
     transform: scale(-1, 1);
 }
 /* flicker animation taken from http://goonhub.com/secret */
-/*.flicker {
+.flicker {
     position: fixed;
     top: 0;
     left: 0;
@@ -108,11 +108,11 @@ body {
   100% {
     opacity: 0.37221;
   }
-}*/
+}
 /* based on
 https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 */
-.scanlines {
+/*.scanlines {
     top: 0;
     left: 0;
     height: 100%;
@@ -142,7 +142,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
   ); /* W3C */
   opacity: .1;
 }
-.scanlines:after {
+/*.scanlines:after {
   box-shadow: 0 2px 6px rgba(25,25,25,0.2),
       inset 0 1px rgba(50,50,50,0.1),
       inset 0 3px rgba(50,50,50,0.05),
@@ -158,12 +158,12 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
  * MS Edge don't support focus-within and css vars
  * inside pseudo selector
  */
-@supports (-ms-ime-align:auto) {
+/*@supports (-ms-ime-align:auto) {
     .scanlines:before {
         content: '';
         animation: vline 3s linear infinite;
     }
-}
+}*/
 @keyframes vline {
   to { transform: translate(0, 100vh)}
 }
