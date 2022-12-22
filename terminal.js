@@ -67,12 +67,12 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('- [[b;#D5D5D5;]PROFIL] - \n');
         this.echo('# [[b;#D5D5D5;]Grand passionné d\'informatique, j\'ai passé tout mon temps depuis mon plus jeune age à pivoter autour de ce milieu. J\'ai depuis quelques années développé\nun amour aigu pour la cyber sécurité et plus récemment le cloud, domaine dans lequels j\'opère et j\'apprends tous les soirs en self learning.\n]');
         this.echo('- [[b;#D5D5D5;]EXPERIENCES] - \n');
-        this.echo('# [[b;#D5D5D5;]Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023]');
-        this.echo('# [[b;#D5D5D5;]technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022]');
-        this.echo('# [[b;#D5D5D5;]informaticien - Cyberprovence / 2019 - 2021]');
-        this.echo('# [[b;#D5D5D5;]employé polyvalent - Mcdonalds / 2018 - 2020\n]');
+        this.echo('# [[b;#D5D5D5;]Administrateur systèmes, réseaux et sécurité | support N2 -] KOESIO [[b;#D5D5D5;]/ 2022 - 2023]');
+        this.echo('# [[b;#D5D5D5;]technicien systèmes et réseaux | support N1 -] KOESIO [[b;#D5D5D5;]/ 2021 - 2022]');
+        this.echo('# [[b;#D5D5D5;]informaticien -] Cyberprovence [[b;#D5D5D5;]/ 2019 - 2021]');
+        this.echo('# [[b;#D5D5D5;]employé polyvalent -] Mcdonalds [[b;#D5D5D5;]/ 2018 - 2020\n]');
         this.echo('- [[b;#D5D5D5;]SKILLS] - \n');
-        this.echo('# [[b;#D5D5D5;]Python | Linux | Windows | Active Directory | Office 365 | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | exchange | GPO | Bash | HTML\nCSS | Javascript | Powershell | AWS | Azure AD | Docker ]');
+        this.echo('# [[b;#D5D5D5;]Python | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | Scripting | Powershell]');
         this.echo('\n')
         this.echo('- [[b;#D5D5D5;]Type] help() [[b;#D5D5D5;]to see all the commands | Type] experiences() [[b;#D5D5D5;]to see the details about my experiences |] skills() [[b;#D5D5D5;]to see the details about my skills\nAnd type] projects() [[b;#D5D5D5;]to see all my projects] -\n')
         
