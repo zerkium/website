@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
 body {
     margin: 0;
     background: black;
@@ -117,7 +115,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
     left: 0;
     height: 100%;
     width: 100%;
-    opacity:0.2;
+    opacity:1;
     background: radial-gradient(
         circle,
         rgba(255,255,255,0),
