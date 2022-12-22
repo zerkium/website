@@ -1,0 +1,38 @@
+#terminal {
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#terminal-header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#close-button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#terminal-body {
+  padding: 10px;
+}
+
+#command-input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  width: 100%;
+}
