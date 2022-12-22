@@ -32,7 +32,7 @@ body {
     transform: scale(-1, 1);
 }
 /* flicker animation taken from http://goonhub.com/secret */
-.flicker {
+/*.flicker {
     position: fixed;
     top: 0;
     left: 0;
@@ -108,7 +108,7 @@ body {
   100% {
     opacity: 0.37221;
   }
-}
+}*/
 /* based on
 https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 */
