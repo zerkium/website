@@ -115,9 +115,9 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 .scanlines {
     top: 0;
     left: 0;
-    height: 50%;
-    width: 50%;
-    opacity:0.3;
+    height: 100%;
+    width: 100%;
+    opacity:0.2;
     background: linear-gradient(
         to bottom,
         rgba(255,255,255,0),
