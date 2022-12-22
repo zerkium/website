@@ -142,7 +142,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
   ); /* W3C */
   opacity: .1;
 }
-/*.scanlines:after {
+.scanlines:after {
   box-shadow: 0 2px 6px rgba(25,25,25,0.2),
       inset 0 1px rgba(50,50,50,0.1),
       inset 0 3px rgba(50,50,50,0.05),
@@ -163,7 +163,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         content: '';
         animation: vline 3s linear infinite;
     }
-}*/
+}
 @keyframes vline {
   to { transform: translate(0, 100vh)}
 }
