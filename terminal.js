@@ -64,6 +64,14 @@ var term = $('#terminal').terminal(function(command, term) {
     enabled: $('body').attr('onload') === undefined,
     onInit: function() {
         set_size();
+        
+        this.echo('Grand passionné d\'informatique, j\'ai passé tout mon temps depuis mon plus jeune age à pivoter autour de ce milieu. J\'ai depuis quelques années développé un amour aigu pour la cyber sécurité et plus récemment le cloud, domaine dans lequels j\'opère et j\'apprends tous les soirs en self learning.\n');
+        this.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
+        this.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
+        this.echo('informaticien - Cyberprovence / 2019 - 2021');
+        this.echo('employé polyvalent - Mcdonalds / 2018 - 2020');
+        
+        /*
         this.echo('Type [[b;#fff;]exit] to see turn off animation.');
         this.echo('Type [[b;#fff;]grab()] function to get the scre' +
                   'enshot from your camera');
@@ -72,6 +80,7 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('Type [[b;#fff;]skills()] to get the details about my skills')
         this.echo('Type [[b;#fff;]projects()] to get the details about my projects')
         this.echo('Type [[b;#fff;]help()] to see this message again')
+        */
     },
     onClear: function() {
         console.log(this.find('video').length);
