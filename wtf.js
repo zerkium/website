@@ -11,5 +11,16 @@ commandInput.addEventListener('keydown', (event) => {
     const command = event.target.value;
     event.target.value = '';
     // Add code to handle the command here
+    switch (command) {
+      case 'help':
+        // Display a list of available commands
+        break;
+      case 'clear':
+        // Clear the terminal screen
+        break;
+      default:
+        // Display an error message
+        break;
+    }
   }
 });
