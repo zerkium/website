@@ -21,15 +21,14 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo('did you mean [[b;#fff;]pause()]?');
     } else if (cmd.name === 'echo') {
         term.echo(cmd.rest);
-    } else if (cmd.name === 'help()') {
-        term.echo('Type [[b;#fff;]exit] to see turn off animation.');
-        term.echo('Type [[b;#fff;]grab()] to get the scre' +
-                  'enshot from your camera');
-        term.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
-        term.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences');
-        term.echo('Type [[b;#fff;]skills()] to get the details about my skills');
-        term.echo('Type [[b;#fff;]projets()] to get the details about my projects');
-        term.echo('Type [[b;#fff;]help()] to see this message again')
+    } else if (cmd.name === 'help()') {      
+        this.echo('Type [[b;#fff;]exit] to see turn off animation.');
+        this.echo('Type [[b;#fff;]grab()] function to get the screenshot from your camera');
+        this.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
+        this.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences')
+        this.echo('Type [[b;#fff;]skills()] to get the details about my skills')
+        this.echo('Type [[b;#fff;]projects()] to get the details about my projects')
+        this.echo('Type [[b;#fff;]help()] to see this message again');
     } else if (command === 'projects()') {
         term.echo('');
         term.echo('[[b;#fff;]TIERING MODEL] - [[b;#D5D5D5;]Dans le cadre d\'un antécédent de piratage d\'un client, j\'ai été missionné sur la sécurisation de l\'infrastructure informatique de celui-ci. il s\'agissait de mettre en place\nun model en "oignon", tiering model avancé par microsoft. il est nommé ainsi car il se base sur les différentes couches d\'un oignon rapporté à la sécurité des systemes informatiques\nla couche 0 étant la plus sécurisée. Cette sécurité à demandé la mise en place de LAPS permettant la sécurisation des comptes, de serveurs dit de passerelles pour faire le rebond entre les couches\net de nombreuses GPO visant à la l\'isolation des différentes couches. Aucun outil tiers n\'a étés utilisé lors de ce projet, puisque j\'avait développé a cet effet un script powershell me permettant\nune remodélisation complète de la structure AD, la création des GPO, des règles de firewall de chaque tiers, et bien d\'autres.\n\n]');
@@ -74,6 +73,8 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('# [[b;#D5D5D5;]employé polyvalent - Mcdonalds / 2018 - 2020\n]');
         this.echo('- [[b;#D5D5D5;]SKILLS] - \n');
         this.echo('# [[b;#D5D5D5;]Python | Linux | Windows | Active Directory | Office 365 | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | exchange | GPO | Bash | HTML | CSS | Javascript | Powershell | AWS | Azure AD | Docker ]');
+        this.echo('\n')
+        this.exho('# Type help() to see the more details')
         
         /*
         this.echo('Type [[b;#fff;]exit] to see turn off animation.');
