@@ -121,8 +121,8 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         to bottom,
         rgba(255,255,255,0),
         rgba(255,255,255,0) 50%,
-        rgba(0,0,0,4) 70%,
-        rgba(0,0,0,9)
+        rgba(0,0,0,1) 70%,
+        rgba(0,0,0,3)
     );
     background-size: 100% .3rem;
     position: fixed;
