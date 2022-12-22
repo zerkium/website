@@ -39,3 +39,8 @@
   width: 100%;
   cursor: url('./cursor.png'), auto;
 }
+
+#experience-link {
+  /* Other styling for the link goes here */
+  cursor: pointer;
+}
