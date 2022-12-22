@@ -23,7 +23,7 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo(cmd.rest);
     } else if (cmd.name === 'help()') {
         term.echo('Type [[b;#fff;]exit] to see turn off animation.');
-        term.echo('Type [[b;#fff;]grab()] function to get the scre' +
+        term.echo('Type [[b;#fff;]grab()] to get the scre' +
                   'enshot from your camera');
         term.echo('Type [[b;#fff;]camera()] to get video and [[b;#fff;]pause()]/[[b;#fff;]play()] to stop/play');
         term.echo('Type [[b;#fff;]experiences()] to get the details about my past experiences');
