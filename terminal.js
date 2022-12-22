@@ -74,7 +74,7 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('- [[b;#D5D5D5;]SKILLS] - \n');
         this.echo('# [[b;#D5D5D5;]Python | Linux | Windows | Active Directory | Office 365 | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | exchange | GPO | Bash | HTML\nCSS | Javascript | Powershell | AWS | Azure AD | Docker ]');
         this.echo('\n')
-        this.echo('- [[b;#D5D5D5;]Type] help() [[b;#D5D5D5;]to see the more details | You can type] experiences() [[b;#D5D5D5;]to see the details about my experiences |] skills() [[b;#D5D5D5;]to see the details about my skills |] projects() [[b;#D5D5D5;]to see all my projects] -\n')
+        this.echo('- [[b;#D5D5D5;]Type] help() [[b;#D5D5D5;]to see the more details | You can type] experiences() [[b;#D5D5D5;]to see the details about my experiences |] skills() [[b;#D5D5D5;]to see the details about my skills]\nprojects() [[b;#D5D5D5;]to see all my projects] -\n')
         
         /*
         this.echo('Type [[b;#fff;]exit] to see turn off animation.');
