@@ -15,7 +15,7 @@ body {
     --background: #200606;
     --link-color: #3377FF;
     /*--glow: 1;*/ 
-    --font: monospace;
+    /*--font: monospace;*/
 }
 @media (min-width: 800px) {
     :root {
