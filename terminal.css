@@ -5,7 +5,13 @@ div {
 body {
     margin: 0;
     background: black;
+    animation: typing 3s steps(40, end); /* test typing animation */
 }
+/* test typing animation */
+@keyframes typing {
+  from { width: 0; }
+}
+
 .terminal img[src*="blob:"], .terminal video {
     max-width: 100%;
 }
