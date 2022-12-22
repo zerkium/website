@@ -1,10 +1,12 @@
 #terminal {
   background-color: #000;
+  background-image: url('./pixel-pattern.png');
   color: #fff;
   font-family: monospace;
   width: 500px;
   height: 300px;
   border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   overflow: hidden;
 }
 
@@ -35,4 +37,5 @@
   border: none;
   font-family: monospace;
   width: 100%;
+  cursor: url('./cursor.png'), auto;
 }
