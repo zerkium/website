@@ -118,8 +118,8 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
     height: 100%;
     width: 100%;
     opacity:0.2;
-    background: gradient(
-        to bottom,
+    background: radial-gradient(
+        circle,
         rgba(255,255,255,0),
         rgba(255,255,255,0) 50%,
         rgba(0,0,0,.2) 70%,
