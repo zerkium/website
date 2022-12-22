@@ -13,7 +13,11 @@ commandInput.addEventListener('keydown', (event) => {
     // Add code to handle the command here
     switch (command) {
       case 'help':
-        // Display a list of available commands
+        terminalBody.innerHTML += '<p>List of available commands:</p>';
+        terminalBody.innerHTML += '<ul>';
+        terminalBody.innerHTML += '<li>help</li>';
+        terminalBody.innerHTML += '<li>clear</li>';
+        terminalBody.innerHTML += '</ul>';
         break;
       case 'clear':
         // Clear the terminal screen
