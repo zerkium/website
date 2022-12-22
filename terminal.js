@@ -72,7 +72,7 @@ var term = $('#terminal').terminal(function(command, term) {
         this.echo('# [[b;#D5D5D5;]informaticien - Cyberprovence / 2019 - 2021]');
         this.echo('# [[b;#D5D5D5;]employé polyvalent - Mcdonalds / 2018 - 2020\n]');
         this.echo('- [[b;#D5D5D5;]SKILLS] - \n');
-        this.echo('# [[b;#D5D5D5;]Python | Linux | Windows | Active Directory | Office 365 | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | exchange | GPO | Bash | HTML | CSS | Javascript | Powershell | AWS | Azure AD | Docker ]');
+        this.echo('# [[b;#D5D5D5;]Python | Linux | Windows | Active Directory | Office 365 | Firewall | Routage | VMWare ESX | Hyper-V | Network | Veeam | exchange | GPO | Bash | HTML\nCSS | Javascript | Powershell | AWS | Azure AD | Docker ]');
         this.echo('\n')
         this.echo('# Type help() to see the more details')
         
