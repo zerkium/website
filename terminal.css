@@ -112,7 +112,7 @@ body {
 /* based on
 https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 */
-/*.scanlines {
+.scanlines {
     top: 0;
     left: 0;
     height: 100%;
@@ -158,7 +158,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
  * MS Edge don't support focus-within and css vars
  * inside pseudo selector
  */
-/*@supports (-ms-ime-align:auto) {
+@supports (-ms-ime-align:auto) {
     .scanlines:before {
         content: '';
         animation: vline 3s linear infinite;
