@@ -65,7 +65,7 @@ var term = $('#terminal').terminal(function(command, term) {
     onInit: function() {
         set_size();
         
-        this.echo('[[b;#D5D5D5;]PROFIL] - [[b;#D5D5D5;]PROFIL]Grand passionné d\'informatique, j\'ai passé tout mon temps depuis mon plus jeune age à pivoter autour de ce milieu. J\'ai depuis quelques années développé un amour aigu pour la cyber sécurité et plus récemment le cloud, domaine dans lequels j\'opère et j\'apprends tous les soirs en self learning.\n]');
+        this.echo('[[b;#D5D5D5;]PROFIL] - [[b;#D5D5D5;]Grand passionné d\'informatique, j\'ai passé tout mon temps depuis mon plus jeune age à pivoter autour de ce milieu. J\'ai depuis quelques années développé un amour aigu pour la cyber sécurité et plus récemment le cloud, domaine dans lequels j\'opère et j\'apprends tous les soirs en self learning.\n]');
         this.echo('[[b;#D5D5D5;]EXPERIENCES\n]');
         this.echo('Administrateur systèmes, réseaux et sécurité | support N2 - KOESIO / 2022 - 2023');
         this.echo('technicien systèmes et réseaux | support N1 - KOESIO / 2021 - 2022');
