@@ -13,8 +13,8 @@ body {
     --color: #45BD00;
     --background: black;
     --link-color: #3377FF;
-    --glow: -0.5;
-    /*--font: monospace;*/
+    /*--glow: -0.5;*/
+    --font: monospace;
 }
 @media (min-width: 800px) {
     :root {
