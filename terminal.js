@@ -36,12 +36,12 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo('- [[b;#D5D5D5;]CLOUD] - [[b;#D5D5D5;]L\'avenir étant très porté sur le cloud j\'ai pu manipuler plusieurs plateforme comme AWS, AZURE, ou LINODE pour l\'hébergement de certaines VM de tests. De plus étant passionné de\njeux vidéos il m\'est naturelement venu à l\'esprit d\'utiliser docker pour héberger plusieurs serveurs de jeux pour jouer avec mes amis aisément tout en les monitorant avec\ngrafana, prometheus et kubernetes. Chez KOESIO nous avions de notre côté un service hébergement & cloud, permettant comme son nom l\'indique l\'hébergement de son infrastructure informatique et ou\napplicative voir même sauvegarde dans nos datacenters.\n\n]');      
     } else if (command === 'skills()') {
         term.echo('[[b;#D5D5D5;]Lors de mes différentes expériences, j\'ai pu étendre encore un peu plus mes compétences. Bien que je sois jeune, ma passion pour ce milieu et mon autodidactisme me me procure une réelle force.\n]');
-        term.echo('- [[b;#D5D5D5;]RESEAUX] -]\n# [[b;#D5D5D5;]Vpn] **** [[b;#D5D5D5;]| Routage & Switching] **** [[b;#D5D5D5;]| Firewalls & securité] ***** [[b;#D5D5D5;]| Troubleshooting] **** [[b;#D5D5D5;]| SD-Wan ****\n');
+        term.echo('- [[b;#D5D5D5;]RESEAUX] -\n# [[b;#D5D5D5;]Vpn] **** [[b;#D5D5D5;]| Routage & Switching] **** [[b;#D5D5D5;]| Firewalls & securité] ***** [[b;#D5D5D5;]| Troubleshooting] **** [[b;#D5D5D5;]| SD-Wan ****\n');
         term.echo('- [[b;#D5D5D5;]Les marques surlesquels j\ai beaucoup travaillé] -\n# [[b;#D5D5D5;]PfSense | Stormshield | ]');
-        term.echo('- [[b;#D5D5D5;]CLOUD] -]n]# [[b;#D5D5D5;]Docker] *** [[b;#D5D5D5;]| Jenkins] ** [[b;#D5D5D5;]| Aws] ** [[b;#D5D5D5;]| Kubernetes] ** [[b;#D5D5D5;]| Ansible] ** [[b;#D5D5D5;]| teraform] **\n');
-        term.echo('- [[b;#D5D5D5;]SYSTEMS] -]\n# [[b;#D5D5D5;]Windows OS & Servers ***** | Linux **** | Mac Os ***\n]');
-        term.echo('- [[b;#D5D5D5;]PROGRAMMATION] -]\n# [[b;#D5D5D5;]JavaScript] *** [[b;#D5D5D5;]| Python] **** [[b;#D5D5D5;]| Powershell] **** [[b;#D5D5D5;]| Bash & Batch] **** [[b;#D5D5D5;]| Html & Css] ***\n');
-        term.echo('- [[b;#D5D5D5;]VIRTUALISATION] -]\n# [[b;#D5D5D5;]Hyper-V] **** [[b;#D5D5D5;]| ESXi] ****\n');
+        term.echo('- [[b;#D5D5D5;]CLOUD] -\n# [[b;#D5D5D5;]Docker] *** [[b;#D5D5D5;]| Jenkins] ** [[b;#D5D5D5;]| Aws] ** [[b;#D5D5D5;]| Kubernetes] ** [[b;#D5D5D5;]| Ansible] ** [[b;#D5D5D5;]| teraform] **\n');
+        term.echo('- [[b;#D5D5D5;]SYSTEMS] -\n# [[b;#D5D5D5;]Windows OS & Servers ***** | Linux **** | Mac Os ***\n]');
+        term.echo('- [[b;#D5D5D5;]PROGRAMMATION] -\n# [[b;#D5D5D5;]JavaScript] *** [[b;#D5D5D5;]| Python] **** [[b;#D5D5D5;]| Powershell] **** [[b;#D5D5D5;]| Bash & Batch] **** [[b;#D5D5D5;]| Html & Css] ***\n');
+        term.echo('- [[b;#D5D5D5;]VIRTUALISATION] -\n# [[b;#D5D5D5;]Hyper-V] **** [[b;#D5D5D5;]| ESXi] ****\n');
         
     } else if (command === 'experiences()') {
         term.echo('# [[b;#D5D5D5;]Administrateur systèmes, réseaux et sécurité | support N2 -] KOESIO [[b;#D5D5D5;]/ 2022 - 2023]');
