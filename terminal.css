@@ -10,8 +10,8 @@ body {
     height: 100vh;
 }
 :root {
-    --color: red;
-    --background: #1B4009;
+    --color: #45BD00;
+    --background: black;
     --link-color: #3377FF;
     --glow: -0.5;
     /*--font: monospace;*/
