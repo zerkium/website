@@ -13,7 +13,7 @@ body {
     --color: #45BD00;
     --background: black;
     --link-color: #3377FF;
-    --glow: -0.5;
+    --glow: 1;
     /*--font: monospace;*/
 }
 @media (min-width: 800px) {
