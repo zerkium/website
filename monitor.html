@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Docker Swarm Monitor</title>
+</head>
+<body>
+    <h1>Docker Swarm Monitor</h1>
+
+    <table id="services-table">
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Replicas</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // Send an AJAX request to the Python script
+        fetch('E:\monitor.py')
+            .then(response => response.text())
+            .then(data => {
+                // Split the data into lines
+                var lines = data.split('\n');
+
+                // Iterate over the lines and extract the service details
+                lines.forEach(line => {
+                    if (line.startsWith('Service:')) {
+                        var service = line.split(':')[1].trim();
+                    } else if (line.startsWith('Replicas:')) {
+                        var replicas = line.split(':')[1].trim();
+                    } else if (line.startsWith('Image:')) {
+                        var image = line.split(':')[1].trim();
+
+                        // Add a row to the table for the service
+                        var row = document.createElement('tr');
+                        var serviceCell = document.createElement('td');
+                        serviceCell.innerText = service;
+                        row.appendChild(serviceCell);
+                        var replicasCell = document.createElement('td');
+                        replicasCell.innerText = replicas;
+                        row.appendChild(replicasCell);
+                        var imageCell = document.createElement('td');
+                        imageCell.innerText = image;
+                        row.appendChild(imageCell);
+                        document.getElementById('services-table').tBodies[0].appendChild(row);
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
