@@ -46,8 +46,11 @@ var term = $('#terminal').terminal(function(command, term) {
         
     } else if (command === 'experiences()') {
         term.echo('# [[b;#D5D5D5;]Administrateur systèmes, réseaux et sécurité | support N2 -] KOESIO [[b;#D5D5D5;]/ 2022 - 2023]');
+        term.echo('[[b;#D5D5D5;]Reconnu pour ma motivation et mon envie d\'en apprendre toujours plus, j\'opère actuellement en tant qu\'administrateur systeme réseaux & sécurité au sein du support informatique au N2 / N3. Dans ce cadre le maintient en condition opérationnel de nos 650 clients est notre maitre mot, et touchons pratiquement a toutes les technologies que l\'on peut trouver actuellement. Les qualitées qui me caractérisent le plus sont ma motivation, ma soif de connaissance en tout genre, et ma bonne humeur contagieuse. Par le biais de mon travail, j\'ai pu toucher a de nombreuses marques comme Fortinet, Aruba, Stormshield, Pf sens, Data Core, Veeam et bien d\'autre. Nos clients ont bien souvent des serveurs windows, mais certains d\'entre eux utilisent des serveurs linux, nous en avons aussi certains sur MAC, j\'ai donc une apétence particulière envers ces différents os / kernels.]');
         term.echo('# [[b;#D5D5D5;]technicien systèmes et réseaux | support N1 -] KOESIO [[b;#D5D5D5;]/ 2021 - 2022]');
+        term.echo('[[b;#D5D5D5;]Au sein d\'un support informatique, j\'agissait en tant que technicien systemes reseau et securité N1]');
         term.echo('# [[b;#D5D5D5;]informaticien -] Cyberprovence [[b;#D5D5D5;]/ 2019 - 2021]');
+        term.echo('[[b;#D5D5D5;]Nous travaillions en sous traitance pour plusieurs sociétés comme Wifirst ou encore 5com, qui nous faisaient aller chez les clients pour dépanner ou bien installer leurs différents systèmes informatique. J\'ai par ce biais pu commencer à etoffer mes compétences, principalement en réseau dans des hopitaux, des grands campings et même des bases militaires. Nous avions aussi quelques clients directs composés principalement de particuliers et de PME, c\'est grâce à ceux-ci que j\'ai pu développer mes bases en système et sécurité.]');
         term.echo('# [[b;#D5D5D5;]employé polyvalent -] Mcdonalds [[b;#D5D5D5;]/ 2018 - 2020\n]');
     }else if (command !== '') {
         try {
