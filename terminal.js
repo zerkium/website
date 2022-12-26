@@ -40,7 +40,7 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo('- [[b;#D5D5D5;]SKILLS] → [[b;#D5D5D5;]allant de 0 à 5]\n');
         term.echo('- [[b;#D5D5D5;]RESEAUX] -\n# [[b;#D5D5D5;]Vpn] ¤¤¤¤ [[b;#D5D5D5;]| Routage & Switching] ¤¤¤¤ [[b;#D5D5D5;]| Firewalls & securité] ¤¤¤¤¤ [[b;#D5D5D5;]| Troubleshooting] ¤¤¤¤ [[b;#D5D5D5;]| SD-Wan] ¤¤¤¤\n');
         term.echo('- [[b;#D5D5D5;]CLOUD] -\n# [[b;#D5D5D5;]Docker] ¤¤¤¤ [[b;#D5D5D5;]| Docker Swarm] ¤¤¤¤ [[b;#D5D5D5;]|Jenkins] ¤¤ [[b;#D5D5D5;]| Aws] ¤¤ [[b;#D5D5D5;]| Kubernetes] ¤¤ [[b;#D5D5D5;]| Ansible] ¤¤ [[b;#D5D5D5;]| teraform] ¤¤ [[b;#D5D5D5;]| Grafana] ¤¤ [[b;#D5D5D5;]| Prometheus] ¤¤¤\n');
-        term.echo('- [[b;#D5D5D5;]SYSTEMS] -\n# [[b;#D5D5D5;]Windows OS & Servers ¤¤¤¤¤ | Linux ¤¤¤¤ | Mac Os ¤¤¤\n]');
+        term.echo('- [[b;#D5D5D5;]SYSTEMS] -\n# [[b;#D5D5D5;]Windows OS & Servers] ¤¤¤¤¤ [[b;#D5D5D5;]| Linux] ¤¤¤¤ [[b;#D5D5D5;]| Mac Os] ¤¤¤\n]');
         term.echo('- [[b;#D5D5D5;]PROGRAMMATION] -\n# [[b;#D5D5D5;]JavaScript] ¤¤¤ [[b;#D5D5D5;]| Python] ¤¤¤¤ [[b;#D5D5D5;]| Powershell] ¤¤¤¤ [[b;#D5D5D5;]| Bash & Batch] ¤¤¤¤ [[b;#D5D5D5;]| Html & Css] ¤¤¤\n');
         term.echo('- [[b;#D5D5D5;]VIRTUALISATION] -\n# [[b;#D5D5D5;]Hyper-V] ¤¤¤¤ [[b;#D5D5D5;]| ESXi] ¤¤¤¤\n');
         
