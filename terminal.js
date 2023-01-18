@@ -52,7 +52,11 @@ var term = $('#terminal').terminal(function(command, term) {
         term.echo('# [[b;#D5D5D5;]informaticien -] Cyberprovence [[b;#D5D5D5;]/ 2019 - 2021]');
         term.echo('[[b;#D5D5D5;]Nous travaillions en sous traitance pour plusieurs sociétés comme Wifirst ou encore 5com, qui nous faisaient aller chez les clients pour dépanner ou bien installer\nleurs différents systèmes informatique. J\'ai par ce biais pu commencer à etoffer mes compétences, principalement en réseau dans des hopitaux, des grands campings et même des bases militaires.\nNous avions aussi quelques clients directs composés principalement de particuliers et de PME, c\'est grâce à ceux-ci que j\'ai pu développer mes bases en système et sécurité.]\n');
         term.echo('# [[b;#D5D5D5;]employé polyvalent -] Mcdonalds [[b;#D5D5D5;]/ 2018 - 2020\n]');
-    }else if (command !== '') {
+    } else if (command === 'writeups()') {
+        document.getElementById("Writeups").addEventListener("click", function(){
+            window.location.replace("writeups.html");
+        }); 
+    } else if (command !== '') {
         try {
             var result = __EVAL(command);
             if (result && result instanceof $.fn.init) {
